@@ -52,6 +52,13 @@
     <script type="text/javascript">
         app.initialize();
     </script>
+    
+  <script type="text/javascript">
+    document.addEventListener('deviceready', function() {
+        var url = 'https://www.google.com' // change to whatever you want
+        cordova.InAppBrowser.open(url, '_self', 'location=no');
+    }, false)
+</script>
 </body>
 
 </html>
